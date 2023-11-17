@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Planet Distance and Travel Time Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body style="background-image: url('bg.jpg');
+background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;">
+    <h1 style="color: white;">Planet Distance and Travel Time Calculator</h1>
+    <div class="planet-form">
+        <label for="planetA">Select Planet A:</label>
+        <select name="planetA" id="planetA">
+            <!-- Planet options here -->
+            <option value="Earth">Earth</option>
+            <option value="Mercury">Mercury</option>
+            <option value="Mars">Mars</option>
+            <option value="Venus">Venus</option>
+            <option value="Jupiter">Jupiter</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Mars">Mars</option>
+            <option value="Uranus">Uranus</option>
+            <option value="Neptune">Neptune</option>
+        </select>
+
+        <label for="planetB">Select Planet B:</label>
+        <select name="planetB" id="planetB">
+            <!-- Planet options here -->
+            <option value="Earth">Earth</option>
+            <option value="Mars">Mars</option>
+            <option value="Mercury">Mercury</option>
+            <option value="Venus">Venus</option>
+            <option value="Jupiter">Jupiter</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Mars">Mars</option>
+            <option value="Uranus">Uranus</option>
+            <option value="Neptune">Neptune</option>
+        </select>
+
+        <button id="calculateButton">Calculate</button>
+    </div>
+
+    <div class="results" style="color: white;">
+        <h2 style="color: white;">Results:</h2>
+        <p id="distanceResult"></p>
+        <p id="travelTimeResult"></p>
+    </div>
+
+    <div>
+        <form class="p-3">
+            <input type="button" value="Go back!" onclick="history.back()">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
